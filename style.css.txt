@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+background: linear-gradient(to bottom, #fff, #f1f1f1);
+}
+
+header {
+  background: linear-gradient(45deg, #8B0000, #e74c3c);
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+#app {
+  padding: 15px;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+/* CARD */
+.card {
+  background: white;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0 5px 12px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
+
+/* ITEM */
+.item {
+  background: white;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.08);
+}
+
+.item img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.item-content {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.price {
+  color: #e74c3c;
+  font-weight: bold;
+}
+
+/* BUTTON */
+.btn {
+  display: block;
+  margin: 10px;
+  background: #25D366;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+/* BACK */
+.back {
+  background: #8B0000;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
