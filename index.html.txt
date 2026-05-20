@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Scoop Menu</title>
+
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -11,7 +12,7 @@
 
 <header>
   <h1>🍨 Scoop</h1>
-  <p>اختر ما يناسبك</p>
+  <p>اختر وجبتك بسهولة</p>
 </header>
 
 <div id="app"></div>

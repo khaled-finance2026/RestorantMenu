@@ -1,9 +1,11 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-background: linear-gradient(to bottom, #fff, #f1f1f1);
+  direction: rtl;
+  background: linear-gradient(to bottom, #ffffff, #f1f1f1);
 }
 
+/* HEADER */
 header {
   background: linear-gradient(45deg, #8B0000, #e74c3c);
   color: white;
@@ -11,6 +13,16 @@ header {
   padding: 20px;
 }
 
+header h1 {
+  margin: 0;
+}
+
+header p {
+  margin: 5px 0 0;
+  font-size: 14px;
+}
+
+/* CONTAINER */
 #app {
   padding: 15px;
 }
@@ -25,25 +37,31 @@ header {
 /* CARD */
 .card {
   background: white;
-  border-radius: 15px;
-  padding: 20px;
+  border-radius: 20px;
+  padding: 25px;
   text-align: center;
   cursor: pointer;
-  box-shadow: 0 5px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
   transition: 0.3s;
+  font-size: 18px;
 }
 
 .card:hover {
-  transform: translateY(-6px);
+  transform: translateY(-8px) scale(1.02);
 }
 
 /* ITEM */
 .item {
   background: white;
-  border-radius: 15px;
-  margin-bottom: 15px;
+  border-radius: 20px;
+  margin-bottom: 20px;
   overflow: hidden;
-  box-shadow: 0 5px 10px rgba(0,0,0,0.08);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.item:hover {
+  transform: scale(1.01);
 }
 
 .item img {
@@ -52,10 +70,12 @@ header {
   object-fit: cover;
 }
 
+/* CONTENT */
 .item-content {
-  padding: 10px;
+  padding: 12px;
   display: flex;
   justify-content: space-between;
+  font-size: 16px;
 }
 
 .price {
@@ -67,15 +87,16 @@ header {
 .btn {
   display: block;
   margin: 10px;
-  background: #25D366;
+  background: linear-gradient(45deg, #25D366, #1ebe5d);
   color: white;
-  padding: 10px;
+  padding: 12px;
   text-align: center;
-  border-radius: 10px;
+  border-radius: 12px;
   text-decoration: none;
+  font-weight: bold;
 }
 
-/* BACK */
+/* BACK BUTTON */
 .back {
   background: #8B0000;
   color: white;
@@ -83,4 +104,21 @@ header {
   padding: 10px;
   border-radius: 10px;
   margin-bottom: 15px;
+  cursor: pointer;
+}
+
+/* ANIMATION */
+.fade {
+  animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
